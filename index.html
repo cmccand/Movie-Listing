@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Backbone Views</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/template" id="postTmpl">
+
+    <h2><%= title %></h2>
+    <img src=<%= poster %> />
+    <blockquote><%= director %></blockquote>
+    <button class="deletePost">Delete</button>
+    <hr>
+
+  </script>
+</head>
+<body>
+  <header>Movie Database</header>
+  <section>
+    <h1>Movies</h1> <button class="showCreate">Add Movie</button>
+    <form action="" id="createPost">
+      <p><input type="text" name="newTitle" placeholder="Title"></p>
+      <p><input type="image" name= "newPoster" src="http://darkroom.shortlist.com/1000/0beb90b5f830d2e13f37978f42472ae7:e0fed69842826666fd4110a617ce6e91/apocalypse-now-1979" alt="Submit"></p>
+      <p><input type="text" name="newDirector" placeholder="Director"></p>
+      <p><button type="submit">Create New Post</button></p>
+    </form>
+
+
+  </section>
+  <aside>
+  </aside>
+
+
+
+
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
+
+  <!-- app files -->
+  <script src="models.js"></script>
+  <script src="collections.js"></script>
+  <script src="views.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
